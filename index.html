@@ -58,7 +58,7 @@
         <br>
         <hr>
         <article>
-          <form name="formulario" action="index.html" method="post">
+          <form name="formulario" action="index.html" method="get">
             <fieldset>
               <legend>Básica</legend>
               <p>
@@ -68,7 +68,7 @@
                 <label>Apellido: <input type="text" name="Apellido"></label>
               </p>
               <p>
-                <label>Edad: <input type="number" name="Edad" maxlength="150"></label>
+                <label>Edad: <input type="number" name="Edad" min="18" max="120"></label>
               </p>
               <p>
                 <label>Telefono: <input type="tel" name="Telefono"></label>
@@ -78,6 +78,9 @@
               </p>
               <p>
                 <label>Fecha de nacimiento: <input type="date" name="Fecha_n"></label>
+              </p>
+              <p>
+                <label>Volumen: <input type="range" name="Volumen" value="15" min="0" max="100"> </label>
               </p>
               <p><input type="submit"></p>
             </fieldset>
@@ -98,20 +101,20 @@
               <legend>Gustos</legend>
               <p>
                 <label>
-                  Color: <input type="color" name="Color">
+                  Color: <input type="color" name="Color" value="#0000FF">
                 </label>
               </p>
               <p>
                 <label>
-                  Libros
+                  Libros:
                   <input type="radio" name="Gusto" value="Libros">
                 </label>
                 <label>
-                  Películas
+                  Películas:
                   <input type="radio" name="Gusto" value="Películas">
                 </label>
                 <label>
-                  Música
+                  Música:
                   <input type="radio" name="Gusto" value="Música">
                 </label>
                 <label>
